@@ -16,13 +16,11 @@ s.description      = '支持共享秤二维码数据解析'
 s.homepage         = 'https://github.com/YolandaQingniu/SDK-Share-iOS'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'service@qnniu.com' => 'service@qnniu.com' }
-s.source           = { :git => 'https://github.com/YolandaQingniu/SDK-Share-iOS.git', :tag => s.version.to_s }
+s.source           = { :git => 'https://github.com/YolandaQingniu/SDK-Share-iOS.git', :tag => s.version }
 
 s.ios.deployment_target = '8.0'
 
-s.source_files = 'QNShareSDK-demo/QNShareSDK/**/*'
 s.vendored_frameworks = ['QNShareSDK-demo/QNShareSDK/QNShareDevice.framework']
-s.source_files = 'QNShareSDK-demo/QNShareSDK/**/*'
 s.xcconfig = {'BITCODE_GENERATION_MODE' => 'bitcode'}
 
 end
