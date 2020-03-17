@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 s.name             = 'QNShareSDK'
 s.version          = '0.0.1'
-s.summary          = '轻牛旗下共享秤SDK'
+s.summary          = '轻牛旗下共享秤设备解析'
 
 s.description      = '支持共享秤二维码数据解析'
 
@@ -20,7 +20,7 @@ s.source           = { :git => 'https://github.com/YolandaQingniu/SDK-Share-iOS.
 
 s.ios.deployment_target = '8.0'
 
-s.vendored_frameworks = ['QNShareSDK-demo/QNShareSDK/QNShareDevice.framework']
-s.xcconfig = {'BITCODE_GENERATION_MODE' => 'bitcode'}
+s.vendored_frameworks = 'QNShareSDK.framework'
+s.static_framework = true
 
 end
