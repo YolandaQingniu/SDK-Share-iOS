@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <QNShareSDK/QNShareSDK.h>
+#import <QNShareDevice/QNShareSDK.h>
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 

@@ -13,9 +13,9 @@
 		1B6223052420A184008270F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B6223042420A184008270F2 /* Assets.xcassets */; };
 		1B6223082420A184008270F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6223062420A184008270F2 /* LaunchScreen.storyboard */; };
 		1B62230B2420A184008270F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B62230A2420A184008270F2 /* main.m */; };
-		1B9AA46E2420A1C6007EB483 /* QNShareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9AA46D2420A1C6007EB483 /* QNShareSDK.framework */; };
 		1B9AA4702420A250007EB483 /* 123456789.qn in Resources */ = {isa = PBXBuildFile; fileRef = 1B9AA46F2420A250007EB483 /* 123456789.qn */; };
 		1B9AA4D02420ACA6007EB483 /* QNShareSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1B9AA4CF2420ACA6007EB483 /* QNShareSDK.podspec */; };
+		1B9AA5502420B89F007EB483 /* QNShareDevice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B9AA54E2420B881007EB483 /* QNShareDevice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,9 +29,9 @@
 		1B6223072420A184008270F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B6223092420A184008270F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B62230A2420A184008270F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1B9AA46D2420A1C6007EB483 /* QNShareSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QNShareSDK.framework; sourceTree = "<group>"; };
 		1B9AA46F2420A250007EB483 /* 123456789.qn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 123456789.qn; sourceTree = "<group>"; };
-		1B9AA4CF2420ACA6007EB483 /* QNShareSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = QNShareSDK.podspec; sourceTree = SOURCE_ROOT; };
+		1B9AA4CF2420ACA6007EB483 /* QNShareSDK.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = QNShareSDK.podspec; sourceTree = SOURCE_ROOT; };
+		1B9AA54E2420B881007EB483 /* QNShareDevice.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = QNShareDevice.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B9AA46E2420A1C6007EB483 /* QNShareSDK.framework in Frameworks */,
+				1B9AA5502420B89F007EB483 /* QNShareDevice.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 		1B9AA46C2420A1B4007EB483 /* QNShareSDK */ = {
 			isa = PBXGroup;
 			children = (
-				1B9AA46D2420A1C6007EB483 /* QNShareSDK.framework */,
+				1B9AA54E2420B881007EB483 /* QNShareDevice.framework */,
 			);
 			path = QNShareSDK;
 			sourceTree = "<group>";

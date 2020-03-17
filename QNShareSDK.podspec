@@ -21,8 +21,8 @@ s.source           = { :git => 'https://github.com/YolandaQingniu/SDK-Share-iOS.
 s.ios.deployment_target = '8.0'
 
 s.source_files = 'QNShareSDK-demo/QNShareSDK/**/*'
-s.public_header_files= 'QNShareSDK-demo/QNShareSDK/**/*.h'
-s.static_framework = true
+s.vendored_frameworks = ['QNShareSDK-demo/QNShareSDK/QNShareDevice.framework']
+s.source_files = 'QNShareSDK-demo/QNShareSDK/**/*'
 s.xcconfig = {'BITCODE_GENERATION_MODE' => 'bitcode'}
 
 end
