@@ -7,7 +7,7 @@ SDK 的运行需要 appid 以及配置文件，商家在接入时可先使用轻
 ### cocoapods 安装:
 
 - 先安装 Cocoapods；
-- 通过 pod repo update 更新 QNSDK 的 cocoapods 版本；
+- 通过 pod repo update 更新 QNShareSDK 的 cocoapods 版本；
 - 在 Podfile 对应的 target 中，添加`pod 'QNShareSDK'`，并执行 pod install；
 - 在项目中使用 CocoaPods 生成的.xcworkspace 运行工程；
 - 在你的代码文件头引入头文件`#import <QNShareSDK/QNShareSDK.h>`
@@ -30,7 +30,7 @@ SDK 的运行需要 appid 以及配置文件，商家在接入时可先使用轻
   }];
   ```
 
-- 获取待解析的数据
+- 获取待解析的字符串
 
   ```objc
   NSString *example = @"http://share.api.yolanda.hk/api/mobile/scan?c=bc9886d2d68926bc389b6e86";
@@ -55,5 +55,11 @@ SDK 的运行需要 appid 以及配置文件，商家在接入时可先使用轻
 
 - 获取结果
   ```objc
+  //获取所有指标的集合
   NSArray<QNScaleItemData *> *allDatas = [shareData.scaleData getAllItem];
+  //获取单个指标
+  QNScaleItemData *bodyfatData = [shareData.scaleData getItem:QNScaleTypeBodyType];
+  double value = bodyfatData.value;//该指标数值
+  NSString *name = bodyfatData.name;//该指标名称
+  QNValueType *valueType = bodyfatData.valueType;//该指标数据类型 int/double
   ```
